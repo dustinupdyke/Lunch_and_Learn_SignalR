@@ -1,0 +1,129 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="start" class="step slide" data-x="0" data-y="0" style="text-align: center;">
+            <br />
+            <br />
+            <img src="css/signalr.png" />
+        </div>
+
+        <div id="requestResponse" class="step slide" data-x="0" data-y="800">
+            <div style="text-align: center">
+                <q>Traditional web page lifecycle</q>
+                <br />
+                <br />
+                <img src="css/request_response.png" />
+            </div>
+        </div>
+
+        <div id="statelessness" class="step slide" data-x="0" data-y="1600">
+            <div style="text-align: center; margin-top: 0">
+                <q style="margin-top: 0">"The web is stateless"</q>
+                <br />
+                <p style="line-height: 1.6em">A stateless protocol is a communication that treats each request as an independent transaction</p>
+                <br />
+                <img src="css/local.png" width="90%" height="80%" />
+            </div>
+        </div>
+
+        <div id="verbosity" class="step slide" data-x="0" data-y="2400" style="text-align: center">
+            <q style="margin: 30px 0 30px 0;">Verbose functionalities</q>
+            <img src="css/alert.png" width="75%" height="60%" />
+        </div>
+
+        <div id="verbosity_examples" class="step slide" data-x="0" data-y="3200" style="text-align: center">
+            <q>Verbose like....</q>
+            <br />
+            <ul>
+                <li>Rich internet apps</li>
+                <li>Online games</li>
+                <li>Chat</li>
+                <li>Financial Apps</li>
+                <li>Real time news</li>
+                <li>Real time alerts</li>
+                <li>Analytics</li>
+            </ul>
+        </div>
+
+        <div id="arewethereyet" class="step" data-x="0" data-y="5400" data-scale="3" style="text-align: center;">
+            <q>Verbose like....</q>
+            <br />
+            <img src="css/are_we_there_yet.jpg" />
+            <p>ARE WE THERE YET?</p>
+            <p>ARE WE THERE YET?</p>
+            <p>ARE WE THERE YET?</p>
+            <p>ARE WE THERE YET?</p>
+        </div>
+
+        <div id="websockets" class="step slide" data-x="1000" data-y="0">
+            <div style="text-align: center">
+                <q>Websockets</q>
+                <ul>
+                    <li>Provides full-duplex, bi-directional communication channel over a single low-overhead TCP connection.</li>
+                    <li>Cross domain capable</li>
+                    <li>Works with firewalls/proxies</li>
+                    <li>Cut latency up from 150ms to 50ms</li>
+                </ul>
+                <img src="css/sockets.jpg" />
+            </div>
+        </div>
+
+        <div id="ideas" class="step slide" data-x="1000" data-y="800">
+            <div style="text-align: center">
+                <q>Ideas for us</q>
+                <ul>
+                    <li>More responsive UX</li>
+                    <li>Real time dashboards</li>
+                    <li>Notifications</li>
+                    <li>Reporting</li>
+                    <li>Connected devices (location services)</li>
+                    <li>Chat</li>
+                    <li>Inventory</li>
+                    <li>?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="big" class="step" data-x="3500" data-y="2100" data-scale="6">
+            <p>Show me the<b>Code!</b><span class="thoughts">(please)</span></p>
+        </div>
+
+    </div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

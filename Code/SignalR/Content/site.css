@@ -1,0 +1,5 @@
+﻿* { font-family: verdana; }
+.container { background-color: #99CCFF; border: thick solid #808080; padding: 20px; margin: 20px; }
+.chatty, .chatty input { width: 300px; }
+    .chatty * { font-size: x-small !important; }
+    .chatty #discussion, .chatty #discussion * { list-style: none; padding-left: 0; margin-left: 0; }
