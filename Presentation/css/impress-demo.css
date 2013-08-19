@@ -231,6 +231,8 @@ a:focus {
 #ideas q { margin: 30px 0 50px 0; }
 #ideas ul li { margin: 15px 0 0 0; }
 
+#cons ul li, #pros ul li { margin: 15px 0 0 0; }
+
 .slide q {
     display: block;
     font-size: 50px;
